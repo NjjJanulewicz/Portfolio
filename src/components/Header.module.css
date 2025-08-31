@@ -1,0 +1,78 @@
+/* shared */
+.listItem {
+    margin: 0;
+}
+
+.listItem a {
+    display: block;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.listItem a:hover,
+.listItem a.active {
+    background: #444;
+}
+
+.headerText {
+    margin-right: auto;
+}
+
+/* Desktop */
+.headerDesktop {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; /* space between items */
+    align-items: center; /* vertically center children */
+    padding: 1rem 2rem;
+    background: #222;
+    height: 5rem;
+}
+
+.desktopList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #222;
+}
+
+/* Mobile */
+.headerMobile {
+    gap: 1.5rem; /* space between items */
+    align-items: center; /* vertically center children */
+}
+
+.headerMobileContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; /* space between items */
+    align-items: center; /* vertically center children */
+    padding: 1rem 2rem;
+    background: #222;
+    height: 5rem;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity*/
+    z-index: 9999; /* On top of other content*/
+}
+
+.mobileList {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 5rem 0;
+    background: #222;
+}
+
+.openMenuButton {
+    margin-left: auto;
+}
