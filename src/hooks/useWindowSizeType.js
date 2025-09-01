@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {WindowSizeType} from "../WindowSizeType.js";
+import {WindowSizeType} from "../constants/WindowSizeType.js";
 
 export function useWindowSizeType() {
     const [sizeType, setSizeType] = useState(findWindowSizeType(window.innerWidth));

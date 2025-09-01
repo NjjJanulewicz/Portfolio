@@ -1,11 +1,11 @@
 import {ImageList, ImageListItem, ImageListItemBar} from "@mui/material";
-import {PROJECTS} from '../projects';
+import {PROJECTS} from '../constants/projects.js';
 import AsyncImage from "./AsyncImage.jsx";
 import {NavLink} from "react-router-dom";
 import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
-import {WindowSizeType} from "../WindowSizeType.js";
+import {WindowSizeType} from "../constants/WindowSizeType.js";
 
-function Projects() {
+function ProjectsPage() {
     const sizeType = useWindowSizeType();
 
     return (
@@ -38,4 +38,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default ProjectsPage;

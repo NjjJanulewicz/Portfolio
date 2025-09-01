@@ -1,0 +1,222 @@
+{
+    "summary": "Versatile software engineer with 4 years of professional experience in developing and maintaining\nsoftware applications using C#, SQL, Python and JavaScript. Looking for a world class software company\nwhere I can grow professionally and personally. My ideal employer would provide daily challenges and\nsurround me with diverse peers who I can learn from. Proficient in designing user interfaces, creating\nunit tests, and implementing efficient algorithms and data structures. Skilled in version control systems,\nAgile methodologies, and CI/CD pipelines. Strong understanding of software development principles and\npractices.",
+    "education": [
+        {
+            "degree": "Bachelor of Science",
+            "type": "Bachelor of Science",
+            "university": "University of Nebraska at Omaha",
+            "location": "Omaha, NE",
+            "startDate": "2017",
+            "endDate": "2022",
+            "details": [
+                "IT Innovations (Bachelor of Science)",
+                "University of Nebraska at Omaha -Omaha, NE",
+                "August 2017 to May 2022",
+                "Susan T. Buffett scholarship recipient",
+                "Artificial Intelligence Exchange at the University of Groningen",
+                "Member of Dean’s List, Collegiate Entrepreneurs Organization, and Thompson Learning Community",
+                "Application development for local nonprofits in an Agile environment",
+                "Programming experience with Java, C, Perl, and Python with an emphasis on web development and",
+                "data analytics",
+                "Technical writing for manuals and reports"
+            ]
+        }
+    ],
+    "experiences": [
+        {
+            "jobTitle": "Software Engineer",
+            "employer": "Elemental Scientific Inc",
+            "location": "Omaha, NE",
+            "startDate": "May 2022",
+            "endDate": "Present",
+            "details": [
+                "Managed system installations in leading semiconductor fabrication plants",
+                "Implemented security measures (e.g., encryption, authentication) using RFID badges to protect sensitive data",
+                "Developed and maintained applications using C#, SQL, and Python",
+                "Designed user interfaces that are intuitive, visually appealing, and responsive using modern approaches such Task-based asynchronous programming",
+                "Collaborated with stakeholders to define project requirements and timelines",
+                "Created deployment strategies and continuous integration/delivery pipelines using Team City"
+            ]
+        },
+        {
+            "jobTitle": "Full Stack Game Developer",
+            "employer": "American Amusements",
+            "location": "Omaha, NE",
+            "startDate": "July 2021",
+            "endDate": "May 2022",
+            "details": [
+                "Collected project requirements from stakeholders",
+                "Implemented an automated testing suite for our projects",
+                "Created a dead code analysis tool to reduce file size by 20%",
+                "Extended our game engines functionality with a plugin to playback new sound files",
+                "Trained new employees and mentored Interns"
+            ]
+        },
+        {
+            "jobTitle": "Software Development Intern",
+            "employer": "Gallup",
+            "location": "Omaha, NE",
+            "startDate": "January 2020",
+            "endDate": "May 2020",
+            "details": [
+                "Built scalable web applications using React",
+                "Collaborated with end-users to ensure design was efficient",
+                "Worked with stakeholders to generate use cases from business rules",
+                "Leveraged web frameworks and libraries to eliminate tech-debt",
+                "Conducted Jest testing to eliminate bugs",
+                "Helped to achieve a consistent look and visual theme across the web application by promoting uniform",
+                "fonts, formatting, images, images and layout"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Debugging",
+            "years": 5
+        },
+        {
+            "name": "HTML",
+            "years": 5
+        },
+        {
+            "name": "WPF",
+            "years": 0
+        },
+        {
+            "name": "Agile",
+            "years": 0
+        },
+        {
+            "name": "JavaScript",
+            "years": 0
+        },
+        {
+            "name": "Back-end development",
+            "years": 0
+        },
+        {
+            "name": "Responsive web design",
+            "years": 0
+        },
+        {
+            "name": "Scripting",
+            "years": 0
+        },
+        {
+            "name": "User Interface (UI)",
+            "years": 0
+        },
+        {
+            "name": "C#",
+            "years": 3
+        },
+        {
+            "name": "APIs",
+            "years": 0
+        },
+        {
+            "name": "Help desk",
+            "years": 0
+        },
+        {
+            "name": "Relational databases",
+            "years": 0
+        },
+        {
+            "name": "Angular",
+            "years": 0
+        },
+        {
+            "name": "React",
+            "years": 3
+        },
+        {
+            "name": "Full-stack development",
+            "years": 3
+        },
+        {
+            "name": "Software development",
+            "years": 0
+        },
+        {
+            "name": "Test Cases",
+            "years": 0
+        },
+        {
+            "name": "OOP",
+            "years": 5
+        },
+        {
+            "name": "Git",
+            "years": 5
+        },
+        {
+            "name": "CSS",
+            "years": 0
+        },
+        {
+            "name": ".NET",
+            "years": 3
+        },
+        {
+            "name": "Jira",
+            "years": 3
+        },
+        {
+            "name": "SQL",
+            "years": 3
+        },
+        {
+            "name": "Java",
+            "years": 0
+        },
+        {
+            "name": "C",
+            "years": 0
+        },
+        {
+            "name": "Linux",
+            "years": 0
+        },
+        {
+            "name": "Front-end development",
+            "years": 0
+        },
+        {
+            "name": "Unit Testing",
+            "years": 0
+        },
+        {
+            "name": "CI/CD",
+            "years": 3
+        },
+        {
+            "name": "REST",
+            "years": 0
+        },
+        {
+            "name": "Computer science",
+            "years": 0
+        },
+        {
+            "name": "Python",
+            "years": 0
+        },
+        {
+            "name": "Microsoft SQL Server",
+            "years": 3
+        },
+        {
+            "name": "UNIX",
+            "years": 0
+        },
+        {
+            "name": "Install Shield",
+            "years": 3
+        },
+        {
+            "name": "Research",
+            "years": 0
+        }
+    ]
+}

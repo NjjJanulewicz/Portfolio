@@ -1,6 +1,6 @@
 import React from "react";
 import {useParams} from "react-router-dom";
-import {PROJECTS} from "../projects.js";
+import {PROJECTS} from "../constants/projects.js";
 import {ImageList, ImageListItem, Typography} from "@mui/material";
 
 // TODO: Have ui for when a project is not found

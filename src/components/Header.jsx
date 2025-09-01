@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink} from 'react-router-dom';
-import {ROUTES} from '.././routes';
+import {ROUTES} from '../constants/routes.js';
 import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
 import styles from "./Header.module.css";
-import {WindowSizeType} from "../WindowSizeType.js";
+import {WindowSizeType} from "../constants/WindowSizeType.js";
 import {Button, IconButton} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';

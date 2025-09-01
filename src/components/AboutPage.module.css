@@ -1,0 +1,103 @@
+/* General */
+
+/* Bio */
+
+.bioDiv {
+    background: blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bioDivDesktop {
+    flex-direction: row;
+}
+
+.bioDivMobile {
+    flex-direction: column;
+}
+
+.aboutMeDivMobile {
+    background: red;
+    width: 90vw;
+}
+
+.aboutMeDivDesktop {
+    background: red;
+    width: 40vw;
+}
+
+.resumeDiv {
+
+}
+
+.aboutContainer {
+    padding: 2rem;
+}
+
+
+/* Resume */
+.resumeTitle {
+
+}
+
+.resumeHeader {
+
+}
+
+.resumeSubHeader {
+
+}
+
+.resumeSectionDetails {
+
+}
+
+.detailsList {
+
+}
+
+.detailListItem {
+    margin: 0;
+    color: black;
+    transition: background 0.2s;
+}
+
+.list {
+
+}
+
+.listItem {
+    margin: 0;
+    display: block;
+    padding: 1rem 2rem;
+    color: black;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.skillsContainer {
+    display: grid;
+    gap: 16px; /* space between items */
+    padding: 16px;
+}
+
+.skill {
+    background: #1976d2;
+    color: white;
+    font-size: 1.2em;
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.skillsContainerMobile {
+    grid-template-columns: 1fr 1fr;
+}
+
+.skillsContainerDesktop {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
