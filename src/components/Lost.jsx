@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 import React from "react";
 import AsyncImage from "./AsyncImage.jsx";
 
-function LostPage() {
+function Lost() {
     return (
         <>
             <Typography variant="h2" gutterBottom>
@@ -24,4 +24,4 @@ function LostPage() {
     );
 }
 
-export default LostPage;
+export default Lost;

@@ -14,6 +14,6 @@ export function useWindowSizeType() {
 }
 
 function findWindowSizeType(width) {
-    if (width < 600) return WindowSizeType.MOBILE;
+    if (width < 900) return WindowSizeType.MOBILE;
     return WindowSizeType.DESKTOP;
 }

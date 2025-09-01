@@ -14,13 +14,13 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header>
+        <header className={styles.header}>
             {sizeType === WindowSizeType.MOBILE ? (
                 <div className={styles.headerMobile}>
                     <div className={styles.headerMobileContent}>
                         <h1 className={styles.headerText}>NJ</h1>
                         <IconButton className={styles.openMenuButton} onClick={() => setIsMenuOpen((prevState) => !prevState)}>
-                            {isMenuOpen ?  <CloseIcon /> : <MenuIcon/>}
+                            {isMenuOpen ?  <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large"/>}
                         </IconButton>
                     </div>
                     {isMenuOpen && (

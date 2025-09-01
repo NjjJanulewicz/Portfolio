@@ -21,8 +21,8 @@ function Product() {
                 {project.name}
             </Typography>
             <ImageList sx={{width: "auto", height: "auto"}} cols={3}>
-                {project.images.map(image => (
-                    <ImageListItem key={project.name}>
+                {project.images.map((image, index) => (
+                    <ImageListItem key={index}>
                         <img
                             srcSet={`${image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                             src={`${image}?w=164&h=164&fit=crop&auto=format`}
@@ -35,8 +35,8 @@ function Product() {
             <Typography variant="s1">
                 Stack:
             </Typography>
-            {project.tags.map(tag => (
-                <Typography variant="s2" gutterBottom sx={{margin: "0.25rem"}}>
+            {project.tags.map((tag, index) => (
+                <Typography key={index} variant="s2" gutterBottom sx={{margin: "0.25rem"}}>
                     {tag}
                 </Typography>
             ))}

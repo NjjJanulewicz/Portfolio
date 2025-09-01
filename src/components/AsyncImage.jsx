@@ -8,7 +8,11 @@ function AsyncImage({src, alt, ...props}) {
     useEffect(() => {
         const img = new window.Image();
         img.src = src;
-        img.onerror = () => setAborted(true);
+        img.onerror = (e) =>
+        {
+            console.error(e);
+            setAborted(true);
+        }
         img.onabort = () => setAborted(true);
         img.onload = async () => setLoaded(true);
     }, [src]);
@@ -18,7 +22,6 @@ function AsyncImage({src, alt, ...props}) {
         content = <img
             src={src}
             alt={alt}
-            style={{display: 'block', width: '100%', height: 'auto'}}
             {...props}
             loading="lazy"/>;
     } else if (!loaded && !aborted) {

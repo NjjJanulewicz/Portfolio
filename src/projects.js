@@ -44,7 +44,7 @@ export const PROJECTS = [
         name: "Datamanager",
         description: "sdf",
         tags: ["SQLServer", "WPF", "dotnet"],
-        titleImage: "/src/assets/trax.png",
+        titleImage: "/src/assets/dm.png",
         images: ["sadf", "asdf"]
     },
     {
@@ -52,7 +52,7 @@ export const PROJECTS = [
         name: "Scan Station",
         description: "sdf",
         tags: ["SQLServer", "WPF", "dotnet"],
-        titleImage: "/src/assets/trax.png",
+        titleImage: "/src/assets/scan.png",
         images: ["sadf", "asdf"]
     },
 ];
