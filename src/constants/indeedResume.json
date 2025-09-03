@@ -1,17 +1,28 @@
 {
-    "summary": "Versatile software engineer with 4 years of professional experience in developing and maintaining\nsoftware applications using C#, SQL, Python and JavaScript. Looking for a world class software company\nwhere I can grow professionally and personally. My ideal employer would provide daily challenges and\nsurround me with diverse peers who I can learn from. Proficient in designing user interfaces, creating\nunit tests, and implementing efficient algorithms and data structures. Skilled in version control systems,\nAgile methodologies, and CI/CD pipelines. Strong understanding of software development principles and\npractices.",
+    "summary": "Versatile software engineer with 5 years of professional experience in developing and maintaining\nsoftware applications using C#, SQL, Python and JavaScript. Looking for a world class software company\nwhere I can grow professionally and personally. My ideal employer would provide daily challenges and\nsurround me with diverse peers who I can learn from. Proficient in designing user interfaces, creating\nunit tests, and implementing efficient algorithms and data structures. Skilled in version control systems,\nAgile methodologies, and CI/CD pipelines. Strong understanding of software development principles and\npractices.",
     "education": [
         {
-            "degree": "Bachelor of Science",
+            "degree": "IT Innovations",
             "type": "Bachelor of Science",
             "university": "University of Nebraska at Omaha",
-            "location": "Omaha, NE",
             "startDate": "2017",
             "endDate": "2022",
             "details": [
-                "IT Innovations (Bachelor of Science)",
-                "University of Nebraska at Omaha -Omaha, NE",
-                "August 2017 to May 2022",
+                "Susan T. Buffett scholarship recipient",
+                "Member of Dean’s List, Collegiate Entrepreneurs Organization, and Thompson Learning Community",
+                "Application development for local nonprofits in an Agile environment",
+                "Programming experience with Java, C, Perl, and Python with an emphasis on web development and",
+                "data analytics",
+                "Technical writing for manuals and reports"
+            ]
+        },
+        {
+            "degree": "Artificial Intelligence",
+            "type": "Exchange",
+            "university": "University of Groningen, Netherlands",
+            "startDate": "January 2019",
+            "endDate": "June 2019",
+            "details": [
                 "Susan T. Buffett scholarship recipient",
                 "Artificial Intelligence Exchange at the University of Groningen",
                 "Member of Dean’s List, Collegiate Entrepreneurs Organization, and Thompson Learning Community",
@@ -76,11 +87,15 @@
         },
         {
             "name": "HTML",
-            "years": 5
+            "years": 3
+        },
+        {
+            "name": "CSS",
+            "years": 3
         },
         {
             "name": "WPF",
-            "years": 0
+            "years": 4
         },
         {
             "name": "Agile",
@@ -88,7 +103,7 @@
         },
         {
             "name": "JavaScript",
-            "years": 0
+            "years": 2
         },
         {
             "name": "Back-end development",
@@ -96,7 +111,7 @@
         },
         {
             "name": "Responsive web design",
-            "years": 0
+            "years": 2
         },
         {
             "name": "Scripting",
@@ -108,35 +123,27 @@
         },
         {
             "name": "C#",
-            "years": 3
+            "years": 4
         },
         {
             "name": "APIs",
             "years": 0
         },
         {
-            "name": "Help desk",
-            "years": 0
-        },
-        {
             "name": "Relational databases",
-            "years": 0
-        },
-        {
-            "name": "Angular",
-            "years": 0
+            "years": 4
         },
         {
             "name": "React",
-            "years": 3
+            "years": 2
         },
         {
             "name": "Full-stack development",
-            "years": 3
+            "years": 5
         },
         {
             "name": "Software development",
-            "years": 0
+            "years": 5
         },
         {
             "name": "Test Cases",
@@ -151,28 +158,20 @@
             "years": 5
         },
         {
-            "name": "CSS",
-            "years": 0
-        },
-        {
             "name": ".NET",
-            "years": 3
+            "years": 4
         },
         {
             "name": "Jira",
-            "years": 3
+            "years": 5
         },
         {
             "name": "SQL",
-            "years": 3
+            "years": 5
         },
         {
             "name": "Java",
-            "years": 0
-        },
-        {
-            "name": "C",
-            "years": 0
+            "years": 2
         },
         {
             "name": "Linux",
@@ -188,7 +187,7 @@
         },
         {
             "name": "CI/CD",
-            "years": 3
+            "years": 4
         },
         {
             "name": "REST",
@@ -200,23 +199,15 @@
         },
         {
             "name": "Python",
-            "years": 0
+            "years": 5
         },
         {
             "name": "Microsoft SQL Server",
-            "years": 3
-        },
-        {
-            "name": "UNIX",
-            "years": 0
+            "years": 4
         },
         {
             "name": "Install Shield",
             "years": 3
-        },
-        {
-            "name": "Research",
-            "years": 0
         }
     ]
 }

@@ -1,58 +1,85 @@
 /* General */
-
-/* Bio */
-
-.bioDiv {
-    background: blue;
-    width: 100%;
+.aboutContainer {
+    padding: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bioDivDesktop {
-    flex-direction: row;
-}
-
-.bioDivMobile {
     flex-direction: column;
 }
 
-.aboutMeDivMobile {
-    background: red;
-    width: 90vw;
+p:empty,
+h2:empty,
+h3:empty,
+h4:empty {
+    display: none;
 }
 
-.aboutMeDivDesktop {
-    background: red;
-    width: 40vw;
+/* Bio */
+.bioDiv {
+    align-items: center;
+    justify-content: center;
+    background: #f6faff;
+    padding: 1rem;
+    border-radius: 8px;
+    gap: 2rem;
+    box-shadow: 0 2px 16px 0 rgba(30, 40, 60, 0.03);
+    transition: box-shadow .2s;
 }
 
-.resumeDiv {
-
+.bioDivDesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.aboutContainer {
-    padding: 2rem;
+.bioDivMobile {
+    display: flex;
+    flex-direction: column;
 }
 
+.aboutMeDiv {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1.1em 0;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: #27272a;
+}
 
 /* Resume */
 .resumeTitle {
-
+    font-size: 2rem;
+    font-weight: 700;
+    color: #22223b;
+    margin: 2rem 0 1rem 0;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    border-left: 4px solid #1976d2;
+    padding-left: 1rem;
+    background: linear-gradient(90deg, #f8fafc 60%, #e0e7ff 100%);
+    border-radius: 0.2em;
 }
 
-.resumeHeader {
-
+.resumeHeader
+{
+    font-size: 1.35rem;
+    color: #364a63;
+    margin: 0.75rem 0 0.5rem 0;
+    letter-spacing: 0.01em;
+    line-height: 1.35;
+    font-weight: 750;
 }
 
 .resumeSubHeader {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #364a63;
+    margin: 0.75rem 0 0.5rem 0;
+    letter-spacing: 0.01em;
+    line-height: 1.35;
+}
+
+.resumeContainer {
 
 }
 
-.resumeSectionDetails {
-
-}
 
 .detailsList {
 
@@ -66,6 +93,14 @@
 
 .list {
 
+}
+
+.detail {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #546e7a;
+    margin: 0.5rem 0;
+    letter-spacing: 0.005em;
 }
 
 .listItem {
@@ -82,6 +117,13 @@
     gap: 16px; /* space between items */
     padding: 16px;
 }
+.skillsContainerMobile {
+    grid-template-columns: 1fr 1fr;
+}
+
+.skillsContainerDesktop {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .skill {
     background: #1976d2;
@@ -91,12 +133,3 @@
     text-align: center;
     border-radius: 8px;
 }
-
-.skillsContainerMobile {
-    grid-template-columns: 1fr 1fr;
-}
-
-.skillsContainerDesktop {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-

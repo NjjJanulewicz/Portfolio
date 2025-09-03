@@ -16,41 +16,41 @@ function AboutPage() {
                         src={bioImage}
                         alt="bio"
                         style={{
-                            width: "90vw",
-                            height: "90vh",
+                            width: "100%",
+                            height: "auto",
                             objectFit: "cover",
                             objectPosition: "center"
                         }}
                     />
-                    <p className={styles.aboutMeDivMobile}>{indeedResume.summary}</p>
+                    <p className={styles.aboutMeDiv}>{indeedResume.summary}</p>
                 </div>
             ) : (
                 <div className={[styles.bioDiv, styles.bioDivDesktop].join(' ')}>
-                    <p className={styles.aboutMeDivDesktop}>{indeedResume.summary}</p>
+                    <p className={styles.aboutMeDiv}>{indeedResume.summary}</p>
                     <AsyncImage
                         src={bioImage}
                         alt="bio"
                         style={{
-                            width: "40vw",
-                            height: "90vh",
+                            width: "100%",
+                            height: "auto",
                             objectFit: "cover",
                             objectPosition: "center"
                         }}
                     />
                 </div>
             )}
-            <div className={styles.resumeDiv}>
+            <div className={styles.resumeContainer}>
                 <h2 className={styles.resumeTitle}>Experience</h2>
                 <ul className={styles.list}>
                     {indeedResume.experiences.map((experience, index) => (
                         <li className={styles.listItem} key={index}>
                             <h3 className={styles.resumeHeader}>{experience.jobTitle}</h3>
-                            <h3 className={styles.resumeSubHeader}>{experience.employer} {experience.location}</h3>
+                            <h3 className={styles.resumeSubHeader}>{experience.employer} - {experience.location}</h3>
                             <h3 className={styles.resumeSubHeader}>{experience.startDate} - {experience.endDate}</h3>
                             <ul className={styles.detailsList}>
                                 {experience.details.map((detail, index) => (
                                     <li className={styles.detailListItem} key={index}>
-                                        <h4>{detail}</h4>
+                                        <h4 className={styles.detail}>{detail}</h4>
                                     </li>
                                 ))}
                             </ul>
@@ -63,12 +63,12 @@ function AboutPage() {
                     {indeedResume.education.map((item, index) => (
                         <li className={styles.listItem} key={index}>
                             <h3 className={styles.resumeHeader}>{item.degree} ({item.type})</h3>
-                            <h3 className={styles.resumeSubHeader}>{item.university} {item.location}</h3>
+                            <h3 className={styles.resumeSubHeader}>{item.university}</h3>
                             <h3 className={styles.resumeSubHeader}>{item.startDate} - {item.endDate}</h3>
                             <ul className={styles.detailsList}>
                                 {item.details.map((detail, index) => (
                                     <li className={styles.detailListItem} key={index}>
-                                        <h4>{detail}</h4>
+                                        <h4 className={styles.detail}>{detail}</h4>
                                     </li>
                                 ))}
                             </ul>
