@@ -11,7 +11,7 @@ function AboutPage() {
     return (
         <div className={styles.aboutContainer}>
             {sizeType === WindowSizeType.MOBILE ? (
-                <div className={[styles.bioDiv, styles.bioDivMobile].join(' ')}>
+                <div className={[styles.bioDiv, styles.bioDivMobile].join(" ")}>
                     <AsyncImage
                         src={bioImage}
                         alt="bio"
@@ -22,11 +22,11 @@ function AboutPage() {
                             objectPosition: "center"
                         }}
                     />
-                    <p className={styles.aboutMeDiv}>{indeedResume.summary}</p>
+                    <p className={styles.aboutMeParagraph}>{indeedResume.summary}</p>
                 </div>
             ) : (
-                <div className={[styles.bioDiv, styles.bioDivDesktop].join(' ')}>
-                    <p className={styles.aboutMeDiv}>{indeedResume.summary}</p>
+                <div className={[styles.bioDiv, styles.bioDivDesktop].join(" ")}>
+                    <p className={styles.aboutMeParagraph}>{indeedResume.summary}</p>
                     <AsyncImage
                         src={bioImage}
                         alt="bio"
@@ -78,13 +78,13 @@ function AboutPage() {
 
                 <h2 className={styles.resumeTitle}>Skills</h2>
                 {sizeType === WindowSizeType.MOBILE ? (
-                    <div className={[styles.skillsContainer, styles.skillsContainerMobile].join(' ')}>
+                    <div className={[styles.skillsContainer, styles.skillsContainerMobile].join(" ")}>
                         {indeedResume.skills.map((skill, index) => (
                             <div className={styles.skill} key={index}>{skill.name}: {skill.years}</div>
                         ))}
                     </div>
                     ):(
-                    <div className={[styles.skillsContainer, styles.skillsContainerDesktop].join(' ')}>
+                    <div className={[styles.skillsContainer, styles.skillsContainerDesktop].join(" ")}>
                         {indeedResume.skills.map((skill, index) => (
                             <div className={styles.skill} key={index}>{skill.name}: {skill.years}</div>
                         ))}

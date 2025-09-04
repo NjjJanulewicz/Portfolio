@@ -28,7 +28,7 @@ export const PROJECTS = [
             "I often found myself wasting lots of time digging for what I needed so I made a meta search for used parts.",
         tags: ["React", "Node", "Express", "MongoDB"],
         titleImage: "/src/assets/pc.png",
-        images: ["sadf", "asdf"]
+        images: ["/src/assets/pc.png", "/src/assets/pc.png", "/src/assets/pc.png"]
     },
     {
         link: "trax",

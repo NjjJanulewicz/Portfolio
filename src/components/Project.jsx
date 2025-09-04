@@ -1,7 +1,12 @@
-import React from "react";
-import {useParams} from "react-router-dom";
+import React, {useState} from "react";
+import {NavLink, useParams} from "react-router-dom";
 import {PROJECTS} from "../constants/projects.js";
-import {ImageList, ImageListItem, Typography} from "@mui/material";
+import {Button, IconButton, ImageList, ImageListItem, ImageListItemBar, Stack, Typography} from "@mui/material";
+import AsyncImage from "./AsyncImage.jsx";
+import styles from "./Project.module.css";
+import {ChevronLeft, ChevronRight} from "@mui/icons-material";
+import {WindowSizeType} from "../constants/WindowSizeType.js";
+import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
 
 // TODO: Have ui for when a project is not found
 function findProject(projectLink) {
@@ -10,37 +15,43 @@ function findProject(projectLink) {
 
 function Product() {
     const {projectLink} = useParams();
+    const sizeType = useWindowSizeType();
     const project = findProject(projectLink);
 
     return (
-        <>
-            <Typography variant="h1" gutterBottom>
-                {project.name}
-            </Typography>
-            <Typography variant="b1" gutterBottom>
-                {project.name}
-            </Typography>
-            <ImageList sx={{width: "auto", height: "auto"}} cols={3}>
+        <div className={styles.projectContainer}>
+            <h2 className={styles.projectHeader}>{project.name}</h2>
+            <p className={styles.descriptionParagraph}>{project.description}</p>
+
+            <ImageList
+                variant="masonry"
+                cols={sizeType === WindowSizeType.MOBILE ? 1 : 2}
+                gap={10}
+                style={{margin: "10px"}}
+            >
                 {project.images.map((image, index) => (
                     <ImageListItem key={index}>
-                        <img
-                            srcSet={`${image}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                            src={`${image}?w=164&h=164&fit=crop&auto=format`}
-                            loading="lazy"
-                            alt={`${project.name}-${image}`}
+                        <AsyncImage
+                            src={image}
+                            alt={project.name + " image " + index}
+                            style={{
+                                width: "100%",
+                                maxWidth: sizeType === WindowSizeType.MOBILE ? "100vw" : "50vw",
+                                maxHeight: "90vh",
+                            }}
                         />
                     </ImageListItem>
                 ))}
             </ImageList>
-            <Typography variant="s1">
-                Stack:
-            </Typography>
-            {project.tags.map((tag, index) => (
-                <Typography key={index} variant="s2" gutterBottom sx={{margin: "0.25rem"}}>
-                    {tag}
-                </Typography>
-            ))}
-        </>
+
+            <div className={styles.tags}>
+                <h4>Skills Used:</h4>
+                {project.tags.map((tag, index) => (
+                    <p className={styles.tag} key={index}>{tag}</p>
+                ))}
+            </div>
+
+        </div>
     );
 }
 

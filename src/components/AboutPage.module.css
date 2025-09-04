@@ -34,7 +34,7 @@ h4:empty {
     flex-direction: column;
 }
 
-.aboutMeDiv {
+.aboutMeParagraph {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 1.1em 0;
@@ -57,8 +57,7 @@ h4:empty {
     border-radius: 0.2em;
 }
 
-.resumeHeader
-{
+.resumeHeader {
     font-size: 1.35rem;
     color: #364a63;
     margin: 0.75rem 0 0.5rem 0;
