@@ -11,17 +11,17 @@ function Footer() {
         <div className={styles.footer}>
             <a href="https://github.com/NjjJanulewicz" target="_blank" rel="noopener noreferrer">
                 <IconButton>
-                    <GitHubIcon fontSize="large"/>
+                    <GitHubIcon className={styles.footerIcon} fontSize="large"/>
                 </IconButton>
             </a>
             <a href="https://www.linkedin.com/in/nicholas-janulewicz" target="_blank" rel="noopener noreferrer">
                 <IconButton>
-                    <LinkedInIcon fontSize="large"/>
+                    <LinkedInIcon className={styles.footerIcon} fontSize="large"/>
                 </IconButton>
             </a>
             <a href="mailto:nicholas.janulewicz@gmail.com" target="_blank" rel="noopener noreferrer">
                 <IconButton>
-                    <EmailIcon fontSize="large"/>
+                    <EmailIcon className={styles.footerIcon} fontSize="large"/>
                 </IconButton>
             </a>
         </div>

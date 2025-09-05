@@ -19,8 +19,11 @@ const Header = () => {
                 <div className={styles.headerMobile}>
                     <div className={styles.headerMobileContent}>
                         <h1 className={styles.headerText}>NJ</h1>
-                        <IconButton className={styles.openMenuButton} onClick={() => setIsMenuOpen((prevState) => !prevState)}>
-                            {isMenuOpen ?  <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large"/>}
+                        <IconButton className={styles.openMenuButton}
+                                    onClick={() => setIsMenuOpen((prevState) => !prevState)}>
+                            {isMenuOpen
+                                ? <CloseIcon className={styles.icon} fontSize="large"/>
+                                : <MenuIcon className={styles.icon} fontSize="large"/>}
                         </IconButton>
                     </div>
                     {isMenuOpen && (

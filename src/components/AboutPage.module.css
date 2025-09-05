@@ -1,8 +1,10 @@
 /* General */
 .aboutContainer {
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 2rem;
 }
 
 p:empty,
@@ -16,11 +18,10 @@ h4:empty {
 .bioDiv {
     align-items: center;
     justify-content: center;
-    background: #f6faff;
+    background: var(--forground-color);
     padding: 1rem;
     border-radius: 8px;
-    gap: 2rem;
-    box-shadow: 0 2px 16px 0 rgba(30, 40, 60, 0.03);
+    box-shadow: 0 0 12px 0 var(--shadow-color);
     transition: box-shadow .2s;
 }
 
@@ -35,31 +36,30 @@ h4:empty {
 }
 
 .aboutMeParagraph {
-    font-size: 1.5rem;
+    font-size: var(--paragraph-font-size);
     font-weight: 400;
     margin: 1.1em 0;
     line-height: 1.7;
     letter-spacing: 0.02em;
-    color: #27272a;
+    color: var(--light-text-color);
 }
 
 /* Resume */
 .resumeTitle {
-    font-size: 2rem;
+    font-size: var(--header-font-size);
     font-weight: 700;
-    color: #22223b;
+    color: var(--light-text-color);
     margin: 2rem 0 1rem 0;
     letter-spacing: 0.03em;
     line-height: 1.2;
-    border-left: 4px solid #1976d2;
+    border-left: 12px solid var(--accent-color);
     padding-left: 1rem;
-    background: linear-gradient(90deg, #f8fafc 60%, #e0e7ff 100%);
-    border-radius: 0.2em;
+    background: var(--forground-color);
 }
 
 .resumeHeader {
-    font-size: 1.35rem;
-    color: #364a63;
+    font-size: var(--subheader-font-size);
+    color: var(--light-text-color);
     margin: 0.75rem 0 0.5rem 0;
     letter-spacing: 0.01em;
     line-height: 1.35;
@@ -67,9 +67,9 @@ h4:empty {
 }
 
 .resumeSubHeader {
-    font-size: 1.35rem;
+    font-size: var(--detail-font-size);
     font-weight: 500;
-    color: #364a63;
+    color: var(--light-text-color);
     margin: 0.75rem 0 0.5rem 0;
     letter-spacing: 0.01em;
     line-height: 1.35;
@@ -95,9 +95,9 @@ h4:empty {
 }
 
 .detail {
-    font-size: 1.1rem;
+    font-size: var(--paragraph-font-size);
     font-weight: 400;
-    color: #546e7a;
+    color: var(--light-text-color);
     margin: 0.5rem 0;
     letter-spacing: 0.005em;
 }
@@ -125,9 +125,9 @@ h4:empty {
 }
 
 .skill {
-    background: #1976d2;
-    color: white;
-    font-size: 1.2em;
+    background: var(--forground-color);
+    color: var(--light-text-color);
+    font-size: var(--note-font-size);
     padding: 24px;
     text-align: center;
     border-radius: 8px;

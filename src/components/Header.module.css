@@ -3,6 +3,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    background: var(--accent-color);
 }
 
 .listItem {
@@ -23,6 +24,7 @@
 }
 
 .headerText {
+    color: var(--light-text-color);
     margin-right: auto;
 }
 
@@ -33,7 +35,6 @@
     gap: 1.5rem; /* space between items */
     align-items: center; /* vertically center children */
     padding: 1rem 2rem;
-    background: #222;
     height: 5rem;
 }
 
@@ -42,7 +43,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #222;
 }
 
 /* Mobile */
@@ -57,7 +57,6 @@
     gap: 1.5rem; /* space between items */
     align-items: center; /* vertically center children */
     padding: 1rem 2rem;
-    background: #222;
     height: 5rem;
 }
 
@@ -81,4 +80,8 @@
 
 .openMenuButton {
     margin-left: auto;
+}
+
+.icon {
+    color: var(--light-text-color);
 }

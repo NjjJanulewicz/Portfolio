@@ -4,5 +4,9 @@
     justify-content: center;
     flex-direction: row;
     gap: 1rem;
-    background: #222222;
+    background: var(--accent-color);
+}
+
+.footerIcon {
+    color: var(--light-text-color);
 }

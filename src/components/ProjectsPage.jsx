@@ -13,7 +13,7 @@ function ProjectsPage() {
             variant="masonry"
             cols={sizeType === WindowSizeType.MOBILE ? 1 : 2}
             gap={10}
-            style={{margin: "10px"}}
+            style={{margin: "1rem", width: "100%"}}
         >
             {PROJECTS.map((project, index) => (
                 <ImageListItem key={index}>

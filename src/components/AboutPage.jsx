@@ -45,12 +45,12 @@ function AboutPage() {
                     {indeedResume.experiences.map((experience, index) => (
                         <li className={styles.listItem} key={index}>
                             <h3 className={styles.resumeHeader}>{experience.jobTitle}</h3>
-                            <h3 className={styles.resumeSubHeader}>{experience.employer} - {experience.location}</h3>
-                            <h3 className={styles.resumeSubHeader}>{experience.startDate} - {experience.endDate}</h3>
+                            <h4 className={styles.resumeSubHeader}>{experience.employer} - {experience.location}</h4>
+                            <h4 className={styles.resumeSubHeader}>{experience.startDate} - {experience.endDate}</h4>
                             <ul className={styles.detailsList}>
                                 {experience.details.map((detail, index) => (
                                     <li className={styles.detailListItem} key={index}>
-                                        <h4 className={styles.detail}>{detail}</h4>
+                                        <p className={styles.detail}>{detail}</p>
                                     </li>
                                 ))}
                             </ul>
@@ -63,12 +63,12 @@ function AboutPage() {
                     {indeedResume.education.map((item, index) => (
                         <li className={styles.listItem} key={index}>
                             <h3 className={styles.resumeHeader}>{item.degree} ({item.type})</h3>
-                            <h3 className={styles.resumeSubHeader}>{item.university}</h3>
-                            <h3 className={styles.resumeSubHeader}>{item.startDate} - {item.endDate}</h3>
+                            <h4 className={styles.resumeSubHeader}>{item.university}</h4>
+                            <h4 className={styles.resumeSubHeader}>{item.startDate} - {item.endDate}</h4>
                             <ul className={styles.detailsList}>
                                 {item.details.map((detail, index) => (
                                     <li className={styles.detailListItem} key={index}>
-                                        <h4 className={styles.detail}>{detail}</h4>
+                                        <p className={styles.detail}>{detail}</p>
                                     </li>
                                 ))}
                             </ul>

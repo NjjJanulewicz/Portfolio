@@ -30,7 +30,7 @@ function ContactPage() {
 
     return (
         <form className={styles.formContainer} onSubmit={handleSubmit}>
-            <div className={styles.formTitle}>Contact Form</div>
+            <h1 className={styles.formTitle}>Contact Form</h1>
             <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="name">Name:</label>
                 <input

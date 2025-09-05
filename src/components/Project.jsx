@@ -1,10 +1,9 @@
-import React, {useState} from "react";
-import {NavLink, useParams} from "react-router-dom";
+import React from "react";
+import {useParams} from "react-router-dom";
 import {PROJECTS} from "../constants/projects.js";
-import {Button, IconButton, ImageList, ImageListItem, ImageListItemBar, Stack, Typography} from "@mui/material";
+import {ImageList, ImageListItem} from "@mui/material";
 import AsyncImage from "./AsyncImage.jsx";
 import styles from "./Project.module.css";
-import {ChevronLeft, ChevronRight} from "@mui/icons-material";
 import {WindowSizeType} from "../constants/WindowSizeType.js";
 import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
 
@@ -20,7 +19,7 @@ function Product() {
 
     return (
         <div className={styles.projectContainer}>
-            <h2 className={styles.projectHeader}>{project.name}</h2>
+            <h2 className={styles.projectTitle}>{project.name}</h2>
             <p className={styles.descriptionParagraph}>{project.description}</p>
 
             <ImageList
@@ -50,7 +49,6 @@ function Product() {
                     <p className={styles.tag} key={index}>{tag}</p>
                 ))}
             </div>
-
         </div>
     );
 }

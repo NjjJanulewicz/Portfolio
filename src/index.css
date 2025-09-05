@@ -10,9 +10,3 @@ html {
   padding: 0;
   font-size: 12px;
 }
-
-:root {
-  --primary-color: #95F527;
-  --card-bg: #f6faff;
-  --heading-color: #22223b;
-}
