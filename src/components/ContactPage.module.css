@@ -1,83 +1,83 @@
 .formContainer {
-    background: var(--forground-color);
-    border-radius: 16px;
-    box-shadow: 0 4px 24px var(--shadow-color);
-    padding: 2rem;
-    margin: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 50rem;
-    width: 100%;
+  background: var(--forground-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px var(--shadow-color);
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50rem;
+  width: 100%;
 }
 
 .formTitle {
-    font-size: 2rem;
-    color: var(--light-text-color);
-    text-align: center;
+  font-size: 2rem;
+  color: var(--light-text-color);
+  text-align: center;
 }
 
 .formGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .label {
-    font-size: 1rem;
-    color: var(--light-text-color);
-    margin-bottom: 0.2rem;
+  font-size: 1rem;
+  color: var(--light-text-color);
+  margin-bottom: 0.2rem;
 }
 
 .input {
-    font-size: 1rem;
-    padding: 0.6rem;
-    border: 1px solid #ecd57c;
-    border-radius: 6px;
-    background: #fff;
-    transition: border-color 0.2s;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #ecd57c;
+  border-radius: 6px;
+  background: #fff;
+  transition: border-color 0.2s;
 }
 
 .messageTextarea {
-    font-size: 1rem;
-    padding: 0.6rem;
-    border: 1px solid #ecd57c;
-    border-radius: 6px;
-    background: #fff;
-    transition: border-color 0.2s;
-    height: 10rem;
-    resize: vertical;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #ecd57c;
+  border-radius: 6px;
+  background: #fff;
+  transition: border-color 0.2s;
+  height: 10rem;
+  resize: vertical;
 }
 
 .input:focus {
-    border-color: #d7b74b;
-    outline: none;
+  border-color: #d7b74b;
+  outline: none;
 }
 
 .submitButton {
-    margin-top: 0.5rem;
-    background: white;
-    color: var(--accent-color);
-    border: none;
-    border-radius: 8px;
-    padding: 0.7rem 0;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    width: 33%;
-    align-self: center;
-    transition: background 0.2s;
+  margin-top: 0.5rem;
+  background: white;
+  color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 33%;
+  align-self: center;
+  transition: background 0.2s;
 }
 
 .submitButton:hover,
 .submitButton:focus {
-    background: #e0bb4a;
+  background: #e0bb4a;
 }
 
 .formMessage {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #477b28;
-    text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #477b28;
+  text-align: center;
 }
 

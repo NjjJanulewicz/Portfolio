@@ -1,78 +1,78 @@
 /* General */
 .aboutContainer {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
 }
 
 p:empty,
 h2:empty,
 h3:empty,
 h4:empty {
-    display: none;
+  display: none;
 }
 
 /* Bio */
 .bioDiv {
-    align-items: center;
-    justify-content: center;
-    background: var(--forground-color);
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 12px 0 var(--shadow-color);
-    transition: box-shadow .2s;
+  align-items: center;
+  justify-content: center;
+  background: var(--forground-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px 0 var(--shadow-color);
+  transition: box-shadow .2s;
 }
 
 .bioDivDesktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .bioDivMobile {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutMeParagraph {
-    font-size: var(--paragraph-font-size);
-    font-weight: 400;
-    margin: 1.1em 0;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-    color: var(--light-text-color);
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+  margin: 1.1em 0;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--light-text-color);
 }
 
 /* Resume */
 .resumeTitle {
-    font-size: var(--header-font-size);
-    font-weight: 700;
-    color: var(--light-text-color);
-    margin: 2rem 0 1rem 0;
-    letter-spacing: 0.03em;
-    line-height: 1.2;
-    border-left: 12px solid var(--accent-color);
-    padding-left: 1rem;
-    background: var(--forground-color);
+  font-size: var(--header-font-size);
+  font-weight: 700;
+  color: var(--light-text-color);
+  margin: 2rem 0 1rem 0;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  border-left: 12px solid var(--accent-color);
+  padding-left: 1rem;
+  background: var(--forground-color);
 }
 
 .resumeHeader {
-    font-size: var(--subheader-font-size);
-    color: var(--light-text-color);
-    margin: 0.75rem 0 0.5rem 0;
-    letter-spacing: 0.01em;
-    line-height: 1.35;
-    font-weight: 750;
+  font-size: var(--subheader-font-size);
+  color: var(--light-text-color);
+  margin: 0.75rem 0 0.5rem 0;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  font-weight: 750;
 }
 
 .resumeSubHeader {
-    font-size: var(--detail-font-size);
-    font-weight: 500;
-    color: var(--light-text-color);
-    margin: 0.75rem 0 0.5rem 0;
-    letter-spacing: 0.01em;
-    line-height: 1.35;
+  font-size: var(--detail-font-size);
+  font-weight: 500;
+  color: var(--light-text-color);
+  margin: 0.75rem 0 0.5rem 0;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
 }
 
 .resumeContainer {
@@ -85,9 +85,9 @@ h4:empty {
 }
 
 .detailListItem {
-    margin: 0;
-    color: black;
-    transition: background 0.2s;
+  margin: 0;
+  color: black;
+  transition: background 0.2s;
 }
 
 .list {
@@ -95,40 +95,41 @@ h4:empty {
 }
 
 .detail {
-    font-size: var(--paragraph-font-size);
-    font-weight: 400;
-    color: var(--light-text-color);
-    margin: 0.5rem 0;
-    letter-spacing: 0.005em;
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+  color: var(--light-text-color);
+  margin: 0.5rem 0;
+  letter-spacing: 0.005em;
 }
 
 .listItem {
-    margin: 0;
-    display: block;
-    padding: 1rem 2rem;
-    color: black;
-    text-decoration: none;
-    transition: background 0.2s;
+  margin: 0;
+  display: block;
+  padding: 1rem 2rem;
+  color: black;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
 .skillsContainer {
-    display: grid;
-    gap: 16px; /* space between items */
-    padding: 16px;
+  display: grid;
+  gap: 16px; /* space between items */
+  padding: 16px;
 }
+
 .skillsContainerMobile {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .skillsContainerDesktop {
-    grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .skill {
-    background: var(--forground-color);
-    color: var(--light-text-color);
-    font-size: var(--note-font-size);
-    padding: 24px;
-    text-align: center;
-    border-radius: 8px;
+  background: var(--forground-color);
+  color: var(--light-text-color);
+  font-size: var(--note-font-size);
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
 }

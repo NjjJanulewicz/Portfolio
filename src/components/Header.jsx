@@ -10,52 +10,52 @@ import CloseIcon from '@mui/icons-material/Close';
 
 // Example https://www.kylejenkinscamera.com/kylejenkinscamera
 const Header = () => {
-    const sizeType = useWindowSizeType();
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const sizeType = useWindowSizeType();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    return (
-        <header className={styles.header}>
-            {sizeType === WindowSizeType.MOBILE ? (
-                <div className={styles.headerMobile}>
-                    <div className={styles.headerMobileContent}>
-                        <h1 className={styles.headerText}>NJ</h1>
-                        <IconButton className={styles.openMenuButton}
-                                    onClick={() => setIsMenuOpen((prevState) => !prevState)}>
-                            {isMenuOpen
-                                ? <CloseIcon className={styles.icon} fontSize="large"/>
-                                : <MenuIcon className={styles.icon} fontSize="large"/>}
-                        </IconButton>
-                    </div>
-                    {isMenuOpen && (
-                        <div className={styles.menu}>
-                            <ul className={styles.mobileList}>
-                                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
-                                    <NavLink to={ROUTES.PROJECTS}>Projects</NavLink>
-                                </li>
-                                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
-                                    <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
-                                </li>
-                                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
-                                    <NavLink to={ROUTES.ABOUT}>About</NavLink>
-                                </li>
-                            </ul>
-                        </div>
-                    )}
-                </div>
-            ) : (
-                <div className={styles.headerDesktop}>
-                    <h1 className={styles.headerText}>Nicholas Janulewicz</h1>
-                    <nav>
-                        <ul className={styles.desktopList}>
-                            <li className={styles.listItem}><NavLink to={ROUTES.PROJECTS}>Projects</NavLink></li>
-                            <li className={styles.listItem}><NavLink to={ROUTES.CONTACT}>Contact</NavLink></li>
-                            <li className={styles.listItem}><NavLink to={ROUTES.ABOUT}>About</NavLink></li>
-                        </ul>
-                    </nav>
-                </div>
-            )}
-        </header>
-    );
+  return (
+    <header className={styles.header}>
+      {sizeType === WindowSizeType.MOBILE ? (
+        <div className={styles.headerMobile}>
+          <div className={styles.headerMobileContent}>
+            <h1 className={styles.headerText}>NJ</h1>
+            <IconButton className={styles.openMenuButton}
+                        onClick={() => setIsMenuOpen((prevState) => !prevState)}>
+              {isMenuOpen
+                ? <CloseIcon className={styles.icon} fontSize="large"/>
+                : <MenuIcon className={styles.icon} fontSize="large"/>}
+            </IconButton>
+          </div>
+          {isMenuOpen && (
+            <div className={styles.menu}>
+              <ul className={styles.mobileList}>
+                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
+                  <NavLink to={ROUTES.PROJECTS}>Projects</NavLink>
+                </li>
+                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
+                  <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
+                </li>
+                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
+                  <NavLink to={ROUTES.ABOUT}>About</NavLink>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className={styles.headerDesktop}>
+          <h1 className={styles.headerText}>Nicholas Janulewicz</h1>
+          <nav>
+            <ul className={styles.desktopList}>
+              <li className={styles.listItem}><NavLink to={ROUTES.PROJECTS}>Projects</NavLink></li>
+              <li className={styles.listItem}><NavLink to={ROUTES.CONTACT}>Contact</NavLink></li>
+              <li className={styles.listItem}><NavLink to={ROUTES.ABOUT}>About</NavLink></li>
+            </ul>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
 };
 
 export default Header;

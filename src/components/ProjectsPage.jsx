@@ -6,36 +6,36 @@ import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
 import {WindowSizeType} from "../constants/WindowSizeType.js";
 
 function ProjectsPage() {
-    const sizeType = useWindowSizeType();
+  const sizeType = useWindowSizeType();
 
-    return (
-        <ImageList
-            variant="masonry"
-            cols={sizeType === WindowSizeType.MOBILE ? 1 : 2}
-            gap={10}
-            style={{margin: "1rem", width: "100%"}}
-        >
-            {PROJECTS.map((project, index) => (
-                <ImageListItem key={index}>
-                    <NavLink to={"project/" + project.link}>
-                        <AsyncImage
-                            src={project.titleImage}
-                            alt={project.name}
-                            style={{
-                                width: "100%",
-                                maxWidth: sizeType === WindowSizeType.MOBILE ? "100vw" : "50vw",
-                                maxHeight: "90vh",
-                            }}
-                        />
-                        <ImageListItemBar
-                            title={project.name}
-                            sx={{'.MuiImageListItemBar-title': {fontSize: '2rem'}}}
-                        />
-                    </NavLink>
-                </ImageListItem>
-            ))}
-        </ImageList>
-    );
+  return (
+    <ImageList
+      variant="masonry"
+      cols={sizeType === WindowSizeType.MOBILE ? 1 : 2}
+      gap={10}
+      style={{margin: "1rem", width: "100%"}}
+    >
+      {PROJECTS.map((project, index) => (
+        <ImageListItem key={index}>
+          <NavLink to={"project/" + project.link}>
+            <AsyncImage
+              src={project.titleImage}
+              alt={project.name}
+              style={{
+                width: "100%",
+                maxWidth: sizeType === WindowSizeType.MOBILE ? "100vw" : "50vw",
+                maxHeight: "90vh",
+              }}
+            />
+            <ImageListItemBar
+              title={project.name}
+              sx={{'.MuiImageListItemBar-title': {fontSize: '2rem'}}}
+            />
+          </NavLink>
+        </ImageListItem>
+      ))}
+    </ImageList>
+  );
 }
 
 export default ProjectsPage;

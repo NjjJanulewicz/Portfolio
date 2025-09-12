@@ -11,22 +11,22 @@ import styles from "./App.module.css";
 
 function App() {
 
-    return (
-        <div className={styles.appContainer}>
-            <Header/>
-            <div className={styles.currentRouteContainer}>
-                <Routes>
-                    <Route path={ROUTES.PROJECTS} element={<ProjectsPage/>}/>
-                    <Route path={ROUTES.PROJECT_DETAIL(":projectLink")}
-                           element={<Project projectName={ROUTES.PROJECT_DETAIL(":projectLink")}/>}/>
-                    <Route path={ROUTES.CONTACT} element={<ContactPage/>}/>
-                    <Route path={ROUTES.ABOUT} element={<AboutPage/>}/>
-                    <Route path="*" element={<LostPage/>}/>
-                </Routes>
-            </div>
-            <Footer/>
-        </div>
-    )
+  return (
+    <div className={styles.appContainer}>
+      <Header/>
+      <div className={styles.currentRouteContainer}>
+        <Routes>
+          <Route path={ROUTES.PROJECTS} element={<ProjectsPage/>}/>
+          <Route path={ROUTES.PROJECT_DETAIL(":projectLink")}
+                 element={<Project projectName={ROUTES.PROJECT_DETAIL(":projectLink")}/>}/>
+          <Route path={ROUTES.CONTACT} element={<ContactPage/>}/>
+          <Route path={ROUTES.ABOUT} element={<AboutPage/>}/>
+          <Route path="*" element={<LostPage/>}/>
+        </Routes>
+      </div>
+      <Footer/>
+    </div>
+  )
 }
 
 export default App

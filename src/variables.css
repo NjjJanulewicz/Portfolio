@@ -1,29 +1,26 @@
 :root {
-    --primary-color: #95F527;
-    --card-bg: #f6faff;
-    --heading-color: #22223b;
+  --primary-color: #95F527;
+  --card-bg: #f6faff;
+  --heading-color: #22223b;
 
+  --title-font-size: 2.5rem;
+  --header-font-size: 2.25rem;
+  --subheader-font-size: 2rem;
+  --detail-font-size: 1.75rem;
+  --paragraph-font-size: 1.5rem;
+  --note-font-size: 1.25rem;
 
+  --light-text-color: white;
+  --dark-text-color: #0D0C00;
 
+  --background-color: #1E1F22;
+  --forground-color: #2B2D30;
 
-    --title-font-size: 2.5rem;
-    --header-font-size: 2.25rem;
-    --subheader-font-size: 2rem;
-    --detail-font-size: 1.75rem;
-    --paragraph-font-size: 1.5rem;
-    --note-font-size: 1.25rem;
+  --border-color: #1976d2;
+  --focused-border-color: #1976d2;
+  --shadow-color: black;
 
-    --light-text-color: white;
-    --dark-text-color: #0D0C00;
+  --dark-accent-color: #332200;
 
-    --background-color: #1E1F22;
-    --forground-color: #2B2D30;
-
-    --border-color: #1976d2;
-    --focused-border-color: #1976d2;
-    --shadow-color: black;
-
-    --dark-accent-color: #332200;
-
-    --accent-color: #59492A;
+  --accent-color: #59492A;
 }
