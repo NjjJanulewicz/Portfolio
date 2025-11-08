@@ -1,4 +1,4 @@
-import majesticRiver from '../../public/majesticRiver.png';
+import majesticRiver from '../assets/majesticRiver.png';
 import {Typography} from "@mui/material";
 import {ROUTES} from "../constants/routes.js";
 import {NavLink} from "react-router-dom";
