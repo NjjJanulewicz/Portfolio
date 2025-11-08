@@ -2,7 +2,7 @@ import styles from "./AboutPage.module.css";
 import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
 import {WindowSizeType} from "../constants/WindowSizeType.js";
 import AsyncImage from "./AsyncImage.jsx";
-import bioImage from '../assets/bio.png';
+import bioImage from '../../public/bio.png';
 import indeedResume from "../constants/indeedResume.json";
 
 function AboutPage() {
