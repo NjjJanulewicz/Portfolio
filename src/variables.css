@@ -1,7 +1,5 @@
 :root {
-  --primary-color: #95F527;
-  --card-bg: #f6faff;
-  --heading-color: #22223b;
+  --header-height: 60px;
 
   --title-font-size: 2.5rem;
   --header-font-size: 2.25rem;
@@ -14,12 +12,13 @@
   --dark-text-color: #0D0C00;
 
   --background-color: #1E1F22;
-  --forground-color: #2B2D30;
+  --forground-color: #666666;
 
-  --border-color: #1976d2;
+  --border-color: #000000;
   --focused-border-color: #1976d2;
   --shadow-color: black;
 
+  --highlight-accent-color: #2196f3;
   --dark-accent-color: #332200;
 
   --accent-color: #59492A;

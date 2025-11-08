@@ -32,7 +32,7 @@
 .input {
   font-size: 1rem;
   padding: 0.6rem;
-  border: 1px solid #ecd57c;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   background: #fff;
   transition: border-color 0.2s;
@@ -41,7 +41,7 @@
 .messageTextarea {
   font-size: 1rem;
   padding: 0.6rem;
-  border: 1px solid #ecd57c;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   background: #fff;
   transition: border-color 0.2s;
@@ -71,13 +71,13 @@
 
 .submitButton:hover,
 .submitButton:focus {
-  background: #e0bb4a;
+  background: var(--highlight-accent-color);
 }
 
 .formMessage {
   margin-top: 1rem;
   font-size: 1rem;
-  color: #477b28;
+  color: var(--light-text-color);
   text-align: center;
 }
 

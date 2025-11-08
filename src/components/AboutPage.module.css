@@ -49,7 +49,7 @@ h4:empty {
   font-size: var(--header-font-size);
   font-weight: 700;
   color: var(--light-text-color);
-  margin: 2rem 0 1rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.03em;
   line-height: 1.2;
   border-left: 12px solid var(--accent-color);
@@ -60,7 +60,7 @@ h4:empty {
 .resumeHeader {
   font-size: var(--subheader-font-size);
   color: var(--light-text-color);
-  margin: 0.75rem 0 0.5rem 0;
+  margin: 0;
   letter-spacing: 0.01em;
   line-height: 1.35;
   font-weight: 750;
@@ -70,7 +70,7 @@ h4:empty {
   font-size: var(--detail-font-size);
   font-weight: 500;
   color: var(--light-text-color);
-  margin: 0.75rem 0 0.5rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.01em;
   line-height: 1.35;
 }
@@ -81,7 +81,8 @@ h4:empty {
 
 
 .detailsList {
-
+  padding: 0;
+  margin-left: 2rem;
 }
 
 .detailListItem {
@@ -91,22 +92,23 @@ h4:empty {
 }
 
 .list {
-
+  padding: 0;
+  margin: 1rem 0 1rem 2rem;
 }
 
 .detail {
   font-size: var(--paragraph-font-size);
   font-weight: 400;
   color: var(--light-text-color);
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.005em;
 }
 
 .listItem {
-  margin: 0;
   display: block;
-  padding: 1rem 2rem;
-  color: black;
+  margin: 0;
+  padding: 0;
+  color: var(--light-text-color);
   text-decoration: none;
   transition: background 0.2s;
 }

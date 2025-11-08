@@ -8,14 +8,14 @@
 
 .title {
   font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  margin: 0;
   color: #222;
 }
 
 .descriptionParagraph {
   font-size: var(--paragraph-font-size);
   font-weight: 400;
-  margin: 1.1em 0;
+  margin: 1rem;
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: var(--light-text-color);
@@ -25,7 +25,7 @@
   font-size: var(--title-font-size);
   font-weight: 700;
   color: var(--light-text-color);
-  margin: 2rem 0 1rem 0;
+  margin: 1rem;
   letter-spacing: 0.03em;
   line-height: 1.2;
   border-left: 12px solid var(--accent-color);
@@ -66,11 +66,13 @@
 }
 
 .tags {
+  margin: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: start;
   flex-direction: row;
-  gap: 8px;
+  gap: 12px;
   font-size: var(--note-font-size);
   color: var(--light-text-color);
 }
@@ -79,7 +81,8 @@
   background: var(--accent-color);
   color: var(--light-text-color);
   font-size: var(--note-font-size);
-  padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
+  margin: 0; /* ensure no external spacing */
+  padding: 8px;
 }

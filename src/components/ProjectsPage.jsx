@@ -12,12 +12,12 @@ function ProjectsPage() {
     <ImageList
       variant="masonry"
       cols={sizeType === WindowSizeType.MOBILE ? 1 : 2}
-      gap={10}
-      style={{margin: "1rem", width: "100%"}}
+      gap={30}
+      style={{padding: "2rem"}}
     >
       {PROJECTS.map((project, index) => (
         <ImageListItem key={index}>
-          <NavLink to={"project/" + project.link}>
+          <NavLink to={"project/" + project.route}>
             <AsyncImage
               src={project.titleImage}
               alt={project.name}
@@ -25,6 +25,7 @@ function ProjectsPage() {
                 width: "100%",
                 maxWidth: sizeType === WindowSizeType.MOBILE ? "100vw" : "50vw",
                 maxHeight: "90vh",
+                boxShadow: "6px 6px 12px 2px var(--shadow-color)"
               }}
             />
             <ImageListItemBar
