@@ -99,27 +99,23 @@
         },
         {
             "name": "Agile",
-            "years": 0
+            "years": 2
         },
         {
             "name": "JavaScript",
-            "years": 2
+            "years": 3
         },
         {
             "name": "Back-end development",
-            "years": 0
+            "years": 4
         },
         {
             "name": "Responsive web design",
-            "years": 2
-        },
-        {
-            "name": "Scripting",
-            "years": 0
+            "years": 3
         },
         {
             "name": "User Interface (UI)",
-            "years": 0
+            "years": 5
         },
         {
             "name": "C#",
@@ -127,7 +123,7 @@
         },
         {
             "name": "APIs",
-            "years": 0
+            "years": 5
         },
         {
             "name": "Relational databases",
@@ -142,12 +138,8 @@
             "years": 5
         },
         {
-            "name": "Software development",
-            "years": 5
-        },
-        {
             "name": "Test Cases",
-            "years": 0
+            "years": 5
         },
         {
             "name": "OOP",
@@ -163,7 +155,7 @@
         },
         {
             "name": "Jira",
-            "years": 5
+            "years": 4
         },
         {
             "name": "SQL",
@@ -175,31 +167,23 @@
         },
         {
             "name": "Linux",
-            "years": 0
+            "years": 3
         },
         {
             "name": "Front-end development",
-            "years": 0
+            "years": 5
         },
         {
             "name": "Unit Testing",
-            "years": 0
+            "years": 5
         },
         {
             "name": "CI/CD",
             "years": 4
         },
         {
-            "name": "REST",
-            "years": 0
-        },
-        {
-            "name": "Computer science",
-            "years": 0
-        },
-        {
             "name": "Python",
-            "years": 5
+            "years": 2
         },
         {
             "name": "Microsoft SQL Server",
