@@ -19,7 +19,7 @@ function App() {
           <Route path={ROUTES.PROJECTS} element={<ProjectsPage/>}/>
           <Route path={ROUTES.PROJECT_DETAIL(":projectLink")}
                  element={<Project projectName={ROUTES.PROJECT_DETAIL(":projectLink")}/>}/>
-          <Route path={ROUTES.CONTACT} element={<ContactPage/>}/>
+          {/*<Route path={ROUTES.CONTACT} element={<ContactPage/>}/>*/}
           <Route path={ROUTES.ABOUT} element={<AboutPage/>}/>
           <Route path="*" element={<LostPage/>}/>
         </Routes>

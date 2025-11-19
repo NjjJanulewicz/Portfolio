@@ -32,9 +32,9 @@ const Header = () => {
                 <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
                   <NavLink to={ROUTES.PROJECTS}>Projects</NavLink>
                 </li>
-                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
-                  <NavLink to={ROUTES.CONTACT}>Contact</NavLink>
-                </li>
+                {/*<li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>*/}
+                {/*  <NavLink to={ROUTES.CONTACT}>Contact</NavLink>*/}
+                {/*</li>*/}
                 <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
                   <NavLink to={ROUTES.ABOUT}>About</NavLink>
                 </li>
@@ -48,7 +48,7 @@ const Header = () => {
           <nav>
             <ul className={styles.desktopList}>
               <li className={styles.listItem}><NavLink to={ROUTES.PROJECTS}>Projects</NavLink></li>
-              <li className={styles.listItem}><NavLink to={ROUTES.CONTACT}>Contact</NavLink></li>
+              {/*<li className={styles.listItem}><NavLink to={ROUTES.CONTACT}>Contact</NavLink></li>*/}
               <li className={styles.listItem}><NavLink to={ROUTES.ABOUT}>About</NavLink></li>
             </ul>
           </nav>
