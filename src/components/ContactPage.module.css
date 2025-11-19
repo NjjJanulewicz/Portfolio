@@ -1,5 +1,5 @@
 .formContainer {
-  background: var(--forground-color);
+  background: var(--light-neutral-color);
   border-radius: 16px;
   box-shadow: 0 4px 24px var(--shadow-color);
   padding: 2rem;
@@ -57,7 +57,7 @@
 .submitButton {
   margin-top: 0.5rem;
   background: white;
-  color: var(--accent-color);
+  color: var(--primary-color);
   border: none;
   border-radius: 8px;
   padding: 0.7rem 0;
@@ -71,7 +71,7 @@
 
 .submitButton:hover,
 .submitButton:focus {
-  background: var(--highlight-accent-color);
+  background: var(--info-color);
 }
 
 .formMessage {

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import {ROUTES} from '../constants/routes.js';
 import {useWindowSizeType} from "../hooks/useWindowSizeType.js";
@@ -8,10 +8,23 @@ import {IconButton} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-// Example https://www.kylejenkinscamera.com/kylejenkinscamera
 const Header = () => {
   const sizeType = useWindowSizeType();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const capitalize = s => s ? s[0].toUpperCase() + s.slice(1).toLowerCase() : s;
+
+  const listItems = (
+    <>
+      {Object.entries(ROUTES)
+        .filter(([_, value]) => typeof value === 'string')
+        .map(([property, value]) => (
+          <li key={property} className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
+            <NavLink to={value}>{capitalize(property)}</NavLink>
+          </li>
+        ))}
+    </>
+  );
 
   return (
     <header className={styles.header}>
@@ -19,8 +32,9 @@ const Header = () => {
         <div className={styles.headerMobile}>
           <div className={styles.headerMobileContent}>
             <h1 className={styles.headerText}>NJ</h1>
-            <IconButton className={styles.openMenuButton}
-                        onClick={() => setIsMenuOpen((prevState) => !prevState)}>
+            <IconButton
+              className={styles.openMenuButton}
+              onClick={() => setIsMenuOpen((prevState) => !prevState)}>
               {isMenuOpen
                 ? <CloseIcon className={styles.icon} fontSize="large"/>
                 : <MenuIcon className={styles.icon} fontSize="large"/>}
@@ -29,15 +43,7 @@ const Header = () => {
           {isMenuOpen && (
             <div className={styles.menu}>
               <ul className={styles.mobileList}>
-                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
-                  <NavLink to={ROUTES.PROJECTS}>Projects</NavLink>
-                </li>
-                {/*<li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>*/}
-                {/*  <NavLink to={ROUTES.CONTACT}>Contact</NavLink>*/}
-                {/*</li>*/}
-                <li className={styles.listItem} onClick={() => setIsMenuOpen(false)}>
-                  <NavLink to={ROUTES.ABOUT}>About</NavLink>
-                </li>
+                {listItems}
               </ul>
             </div>
           )}
@@ -47,9 +53,7 @@ const Header = () => {
           <h1 className={styles.headerText}>Nicholas Janulewicz</h1>
           <nav>
             <ul className={styles.desktopList}>
-              <li className={styles.listItem}><NavLink to={ROUTES.PROJECTS}>Projects</NavLink></li>
-              {/*<li className={styles.listItem}><NavLink to={ROUTES.CONTACT}>Contact</NavLink></li>*/}
-              <li className={styles.listItem}><NavLink to={ROUTES.ABOUT}>About</NavLink></li>
+              {listItems}
             </ul>
           </nav>
         </div>

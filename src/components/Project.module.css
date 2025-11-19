@@ -28,9 +28,9 @@
   margin: 1rem;
   letter-spacing: 0.03em;
   line-height: 1.2;
-  border-left: 12px solid var(--accent-color);
+  border-left: 12px solid var(--primary-color);
   padding-left: 1rem;
-  background: var(--forground-color);
+  background: var(--light-neutral-color);
   border-radius: 0.2em;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .tag {
-  background: var(--accent-color);
+  background: var(--primary-color);
   color: var(--light-text-color);
   font-size: var(--note-font-size);
   border-radius: 0.5rem;

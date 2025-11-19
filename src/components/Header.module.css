@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background: var(--accent-color);
+  background: var(--primary-color);
 }
 
 .listItem {
@@ -12,10 +12,12 @@
 
 .listItem a {
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem;
+  margin: 1rem;
   color: white;
   text-decoration: none;
   transition: background 0.2s;
+  border-radius: 8px;
 }
 
 .listItem a:hover,

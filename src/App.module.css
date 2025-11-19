@@ -13,5 +13,5 @@
   margin: 0 auto;
   align-items: start; /* vertical centering */
   justify-content: center; /* horizontal centering */
-  background: var(--background-color);
+  background: var(--dark-neutral-color);
 }

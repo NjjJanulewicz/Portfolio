@@ -18,7 +18,7 @@ h4:empty {
 .bioDiv {
   align-items: center;
   justify-content: center;
-  background: var(--forground-color);
+  background: var(--light-neutral-color);
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 12px 0 var(--shadow-color);
@@ -87,7 +87,7 @@ h4:empty {
 
 .detailListItem {
   margin: 0;
-  color: black;
+  color: var(--light-text-color);
   transition: background 0.2s;
 }
 
@@ -128,7 +128,7 @@ h4:empty {
 }
 
 .skill {
-  background: var(--forground-color);
+  background: var(--light-neutral-color);
   color: var(--light-text-color);
   font-size: var(--note-font-size);
   padding: 24px;

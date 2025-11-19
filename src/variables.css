@@ -8,18 +8,18 @@
   --paragraph-font-size: 1.5rem;
   --note-font-size: 1.25rem;
 
-  --light-text-color: white;
-  --dark-text-color: #0D0C00;
-
-  --background-color: #1E1F22;
-  --forground-color: #666666;
+  --primary-color: #59492A;
+  --secondary-color: #332200;
+  --info-color: #2196f3;
+  --warning-color: yellow;
+  --error-color: red;
+  --success-color: green;
+  --light-neutral-color: #666666;
+  --dark-neutral-color: #1E1F22;
 
   --border-color: #000000;
-  --focused-border-color: #1976d2;
   --shadow-color: black;
 
-  --highlight-accent-color: #2196f3;
-  --dark-accent-color: #332200;
-
-  --accent-color: #59492A;
+  --light-text-color: white;
+  --dark-text-color: #0D0C00;
 }

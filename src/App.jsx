@@ -8,6 +8,7 @@ import Header from "./components/Header.jsx";
 import Project from "./components/Project.jsx";
 import Footer from "./components/Footer.jsx";
 import styles from "./App.module.css";
+import BioPage from "./components/BioPage.jsx";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                  element={<Project projectName={ROUTES.PROJECT_DETAIL(":projectLink")}/>}/>
           {/*<Route path={ROUTES.CONTACT} element={<ContactPage/>}/>*/}
           <Route path={ROUTES.ABOUT} element={<AboutPage/>}/>
+          <Route path={ROUTES.BIO} element={<BioPage/>}/>
           <Route path="*" element={<LostPage/>}/>
         </Routes>
       </div>
